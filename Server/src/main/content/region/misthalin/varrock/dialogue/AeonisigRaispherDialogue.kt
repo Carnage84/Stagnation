@@ -12,6 +12,11 @@ import core.tools.END_DIALOGUE
  */
 @Initializable
 class AeonisigRaispherDialogue(player: Player? = null) : DialoguePlugin(player) {
+    /*
+        Info: is a Saradominist priest and advisor to King Roald III,
+        He is located on the ground floor of Varrock Palace in King Roald's throne room.
+        Location: 3222,3475
+     */
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC
         npc("Please only talk to the King if it's important. He has a", "heavy burden to bear with the running of his Kingdom.")

@@ -14,6 +14,11 @@ import core.tools.END_DIALOGUE
 @Initializable
 class PhillipaDialogue(player: Player? = null) : DialoguePlugin(player) {
 
+     /*
+        Info: Juliet's cousin. She attempted to help you save her and
+        Romeo's relationship during the Romeo & Juliet quest.
+        Location: 3161,3432,1
+     */
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC
         player(FacialExpression.HALF_GUILTY, "Hello, who are you?")

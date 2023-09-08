@@ -13,6 +13,12 @@ import core.tools.END_DIALOGUE
  */
 @Initializable
 class AmbassadorFernookDialogue(player: Player? = null) : DialoguePlugin(player) {
+
+     /*
+        Info: is the ambassador of King Narnode Shareen of the Gnome Stronghold to King Roald of Misthalin.
+        He can be found on the 1st floor of Varrock Palace in Varrock.
+        Location: -
+     */
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC
         player(FacialExpression.HALF_GUILTY, "Hello Ambassador. Are you here visiting King Roald?")

@@ -1,5 +1,6 @@
 package content.region.misthalin.varrock.dialogue
 
+import config.NPCs
 import core.game.dialogue.DialoguePlugin
 import core.game.node.entity.player.Player
 import core.plugin.Initializable
@@ -9,6 +10,11 @@ import core.plugin.Initializable
  */
 @Initializable
 class IffieDialogue(player: Player? = null) : DialoguePlugin(player) {
+
+     /*
+        Info: Old woman knitting in Thessalia's Fine Clothes store in Varrock.
+        Location: 3204,3419
+     */
     override fun open(vararg args: Any?): Boolean {
         npc("Sorry, dearie, if I stop to chat I'll lose count.", "Talk to my sister instead; she likes to chat.", "You'll find her upstairs in the church.")
         stage = 999;
@@ -27,6 +33,6 @@ class IffieDialogue(player: Player? = null) : DialoguePlugin(player) {
     }
 
     override fun getIds(): IntArray {
-        return intArrayOf(5914)
+        return intArrayOf(NPCs.IFFIE_5914)
     }
 }

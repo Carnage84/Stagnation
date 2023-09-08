@@ -19,8 +19,9 @@ import core.tools.START_DIALOGUE
  */
 @Initializable
 class ElsieDialogue(player: Player? = null) : DialoguePlugin(player) {
-    /*
-        Info: old woman knitting an article of clothing for
+
+     /*
+        Info: Old woman knitting an article of clothing for
         Father Lawrence upstairs in the Saradomin church in north-east Varrock.
         Location: 3255,3488,1
      */

@@ -8,6 +8,7 @@ import content.global.skill.free.magic.TeleportMethod
 import content.global.skill.free.prayer.Bones
 import content.global.travel.canoe.Canoe
 import content.quest.member.familycrest.dialogue.DimintheisFamilyCrestDialogue
+import content.region.misthalin.varrock.dialogue.BennyDialogue
 import content.region.misthalin.varrock.dialogue.CuratorHaigHalenDialogue
 import content.region.misthalin.varrock.dialogue.ElsieDialogue
 import core.game.diary.AreaDiaryTask
@@ -245,6 +246,15 @@ class VarrockAchievementDiary : DiaryEventHookBase(DiaryType.VARROCK) {
 
     override fun onDialogueOptionSelected(player: Player, event: DialogueOptionSelectionEvent) {
         when (event.dialogue) {
+            is BennyDialogue -> if (event.currentStage == 14) {
+                if(inInventory(player, Items.COINS_995, 50)) {
+                    finishTask(
+                        player,
+                        DiaryLevel.EASY,
+                        EasyTasks.BUY_VARROCK_HERALD
+                    )
+                }
+            }
             is ElsieDialogue -> if (event.currentStage == 12) {
                 finishTask(
                     player,

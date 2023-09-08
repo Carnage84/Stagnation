@@ -1,5 +1,6 @@
 package content.region.misthalin.varrock.dialogue
 
+import config.NPCs
 import core.api.openNpcShop
 import core.game.component.Component
 import core.game.dialogue.DialoguePlugin
@@ -13,6 +14,18 @@ import core.plugin.Initializable
  */
 @Initializable
 class AsyffDialogue(player: Player? = null) : DialoguePlugin(player){
+
+     /*
+        Info: Runs the Fancy Clothes Store in Varrock.
+        Location: 3281,3398
+     */
+    override fun open(vararg args: Any?): Boolean {
+        npc = args[0] as NPC
+        npc(FacialExpression.HAPPY,"Now you look like someone who goes to","a lot of fancy dress parties.")
+        stage = 0
+        return true
+    }
+
     override fun handle(interfaceId: Int, buttonId: Int): Boolean {
         when(stage){
             0 -> player(FacialExpression.ASKING,"Err...what are you saying exactly?").also { stage++ }
@@ -43,18 +56,11 @@ class AsyffDialogue(player: Player? = null) : DialoguePlugin(player){
         return true
     }
 
-    override fun open(vararg args: Any?): Boolean {
-        npc = args[0] as NPC
-        npc(FacialExpression.HAPPY,"Now you look like someone who goes to","a lot of fancy dress parties.")
-        stage = 0
-        return true
-    }
-
     override fun newInstance(player: Player?): DialoguePlugin {
         return AsyffDialogue(player)
     }
 
     override fun getIds(): IntArray {
-        return intArrayOf(554)
+        return intArrayOf(NPCs.FANCY_DRESS_SHOP_OWNER_554)
     }
 }

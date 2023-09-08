@@ -13,7 +13,8 @@ import core.tools.END_DIALOGUE
  */
 @Initializable
 class DraulLeptocDialogue(player: Player? = null) : DialoguePlugin(player) {
-    /*
+
+     /*
         Info: Walthy nobleman who can be found in his mansion in Varrock. He is Juliet's father.
         Location: 3159,3433
      */

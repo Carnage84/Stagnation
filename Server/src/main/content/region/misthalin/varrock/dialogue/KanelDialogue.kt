@@ -14,6 +14,10 @@ import core.tools.END_DIALOGUE
 @Initializable
 class KanelDialogue(player: Player? = null) : DialoguePlugin(player) {
 
+     /*
+        Info: One of the youngest of Gertrude's four children.
+        Location: -
+     */
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC
         player(FacialExpression.HALF_GUILTY, "Hello there.")

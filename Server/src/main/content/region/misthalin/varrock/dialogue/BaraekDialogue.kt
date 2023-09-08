@@ -17,9 +17,10 @@ import core.tools.END_DIALOGUE
  */
 @Initializable
 class BaraekDialogue(player: Player? = null) : DialoguePlugin(player) {
-    /*
+
+     /*
         Info: Baraek Brigson is a fur trader in the Varrock Square (the center of Varrock).
-        Location in-game: 3217,3435
+        Location: 3217,3435
      */
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC

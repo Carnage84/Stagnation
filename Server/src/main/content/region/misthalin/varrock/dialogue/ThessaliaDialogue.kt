@@ -16,6 +16,11 @@ import core.plugin.Initializable
  */
 @Initializable
 class ThessaliaDialogue(player: Player? = null) : DialoguePlugin(player) {
+
+     /*
+        Info: Runs Thessalia's Fine Clothes and Thessalia's Makeovers in Varrock.
+        Location: 3205,3416
+     */
     override fun open(vararg args: Any): Boolean {
 
         //The trade argument is handled elsewhere

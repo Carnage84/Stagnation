@@ -15,6 +15,11 @@ import core.tools.END_DIALOGUE
  */
 @Initializable
 class LoweDialogue(player: Player? = null) : DialoguePlugin(player) {
+
+     /*
+        Info: Owner of Lowe's Archery Emporium, found in Varrock just east of the general store.
+        Location: 3232,3423
+     */
     override fun open(vararg args: Any): Boolean {
         npc = args[0] as NPC
         npc(FacialExpression.HAPPY, "Welcome to Lowe's Archery Emporium. Do you want", "to see my wares?")

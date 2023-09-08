@@ -1,0 +1,304 @@
+package content.global.skill.member.agility
+
+import config.Items
+import core.api.hasLevelStat
+import core.api.inEquipment
+import core.api.rewardXP
+import core.api.sendMessage
+import core.cache.def.impl.SceneryDefinition
+import core.game.node.Node
+import core.game.node.entity.combat.ImpactHandler
+import core.game.node.entity.impl.ForceMovement
+import core.game.node.entity.impl.PulseType
+import core.game.node.entity.player.Player
+import core.game.node.entity.skill.Skills
+import core.game.node.scenery.Scenery
+import core.game.system.task.Pulse
+import core.game.world.map.Location
+import core.game.world.update.flag.context.Animation
+import core.plugin.Initializable
+import core.tools.RandomFunction
+
+@Initializable
+class ApeAtoll
+/**
+ * Constructs a new `ApeAtollCourse` node.
+ */
+@JvmOverloads constructor(player: Player? = null) : AgilityCourse(player, 6, 450.0) {
+
+    override fun createInstance(player: Player?): AgilityCourse {
+        return ApeAtollCourse(player)
+    }
+
+    override fun handle(player: Player, `object`: Node?, option: String?): Boolean {
+        getCourse(player)
+        val node = `object` as Scenery
+        when (node.id) {
+            12568 -> {
+                jumpSteppingStone(player, `object`)
+                return true
+            }
+
+            12570 -> {
+                climbUpTropicalTree(player, `object`)
+                return true
+            }
+
+            12573 -> {
+                crossMonkeyBars(player, `object`)
+                return true
+            }
+
+            95626 -> {
+                climbUpSkullSlope(player, `object`)
+                return true
+            }
+
+            12578 -> {
+                swingRope(player, `object`)
+                return true
+            }
+
+            12618 -> {
+                climbDownTropicalTree(player, `object`)
+                return true
+            }
+
+            12622 -> {
+                climbDownVine(player, `object`)
+                return true
+            }
+        }
+        return false
+    }
+
+    override fun configure() {
+        SceneryDefinition.forId(12568).handlers["option:jump-to"] = this
+        SceneryDefinition.forId(12570).handlers["option:climb"] = this
+        SceneryDefinition.forId(12573).handlers["option:swing across"] = this
+        SceneryDefinition.forId(12576).handlers["option:climb-up"] = this
+        SceneryDefinition.forId(12578).handlers["option:swing"] = this
+        SceneryDefinition.forId(12618).handlers["option:climb-down"] = this
+    }
+
+    fun climbDownTropicalTree(
+        player: Player,
+        `object`: Scenery?
+    ) {
+        if (!hasLevelStat(player,Skills.AGILITY, 48)) {
+            sendMessage(player, "You must have an agility level of atleast 48 to perform this action.")
+            return
+        }
+        if (!inEquipment(player, Items.MONKEY_GREEGREE_4024)) {
+            sendMessage(player, "You need to transform into a ninja monkey to use the ape atoll courses.")
+            return
+        }
+        if (!player.location.withinDistance(`object` as Location, 2)) return
+        player.lock()
+        val toTile = Location(2770, 2747, 0)
+        player.walkingQueue.addPath(toTile.getX(), toTile.getY(), false)
+        player.walkingQueue.addPoint(2758, 2735,false)
+        player.appearance.setAnimations(Animation(740))
+        sendMessage(player, "You climb the vine...")
+        player.pulseManager.run(object : Pulse() {
+            override fun pulse(): Boolean {
+                sendMessage(player, "..And make it carefully to the end of it.")
+                ForceMovement.run(player, toTile)
+                rewardXP(player, Skills.AGILITY, 450.0)
+                player.appearance.setAnimations(Animation(-1))
+                player.unlock()
+                stop()
+                return true
+            }
+        },PulseType.STANDARD)
+    }
+
+    fun climbDownVine(player: Player, `object`: Scenery?) {
+        if (!hasLevelStat(player,Skills.AGILITY, 48)) {
+            sendMessage(player, "You must have an agility level of atleast 48 to perform this action.")
+            return
+        }
+        if (!inEquipment(player, Items.MONKEY_GREEGREE_4024)) {
+            sendMessage(player, "You need to transform into a ninja monkey to use the ape atoll courses.")
+            return
+        }
+        player.lock(3)
+        val toTile = Location(player.location.getX(), player.location.getY(), 0)
+        player.pulseManager.run(object : Pulse() {
+            override fun pulse() : Boolean {
+                sendMessage(player, "You climb down the vine.")
+                ForceMovement.run(player, toTile)
+                rewardXP(player, Skills.AGILITY, 36.0)
+                stop()
+                return true
+            }
+        },PulseType.STANDARD)
+    }
+
+    fun climbUpSkullSlope(
+        player: Player,
+        `object`: Scenery?
+    ) {
+        if (!hasLevelStat(player,Skills.AGILITY, 48)) {
+            sendMessage(player, "You must have an agility level of atleast 48 to perform this action.")
+            return
+        }
+        if (!inEquipment(player, Items.MONKEY_GREEGREE_4024)) {
+            sendMessage(player, "You need to transform into a ninja monkey to use the ape atoll courses.")
+            return
+        }
+        if (player.location.getX() < 2747) return
+        player.lock(4)
+        val toTile = Location(2743, 2741, 0)
+        player.walkingQueue.addPoint(toTile.getX(), toTile.getY(),  false)
+        player.appearance.setAnimations(Animation(739))
+        player.pulseManager.run(object : Pulse() {
+            override fun pulse() : Boolean {
+                sendMessage(player, "You climb up the skull slope.")
+                ForceMovement.run(player, toTile)
+                rewardXP(player, Skills.AGILITY, 45.0)
+                player.appearance.setAnimations(Animation(-1))
+                stop()
+                return true
+            }
+        },PulseType.STANDARD)
+    }
+
+    fun climbUpTropicalTree(
+        player: Player,
+        `object`: Scenery?
+    ) {
+        if (!hasLevelStat(player,Skills.AGILITY, 48)) {
+            sendMessage(player, "You must have an agility level of atleast 48 to perform this action.")
+            return
+        }
+        if (!inEquipment(player, Items.MONKEY_GREEGREE_4024)) {
+            sendMessage(player, "You need to transform into a ninja monkey to use the ape atoll courses.")
+            return
+        }
+        player.lock(3)
+        val toTile = Location(2752, 2742, 2)
+        player.pulseManager.run(object : Pulse() {
+            override fun pulse() : Boolean {
+                sendMessage(player, "You climb up the tree...")
+                player.appearance.setAnimations(Animation(1382))
+                ForceMovement.run(player, toTile)
+                rewardXP(player, Skills.AGILITY, 25.0)
+                stop()
+                return true
+            }
+        },PulseType.STANDARD)
+    }
+
+    fun crossMonkeyBars(
+        player: Player,
+        `object`: Scenery?
+    ) {
+        if (!hasLevelStat(player,Skills.AGILITY, 48)) {
+            sendMessage(player, "You must have an agility level of atleast 48 to perform this action.")
+            return
+        }
+        if (!inEquipment(player, Items.MONKEY_GREEGREE_4024)) {
+            sendMessage(player, "You need to transform into a ninja monkey to use the ape atoll courses.")
+            return
+        }
+        if (!player.location.withinDistance(`object` as Location, 2)) return
+        player.lock(4)
+        val toTile = Location(2747, 2741, 0)
+        val toTile2 = Location(2747, 2741, 2)
+        player.walkingQueue.addPoint(toTile2.getX(), toTile2.getY(), false)
+        player.appearance.setAnimations(Animation(744))
+        sendMessage(player, "You jump to the monkey bars...")
+        player.pulseManager.run(object : Pulse() {
+            override fun pulse() : Boolean {
+                sendMessage(player, "..And made it carefully to the other side.")
+                player.appearance.setAnimations(Animation(-1))
+                ForceMovement.run(player, toTile)
+                rewardXP(player, Skills.AGILITY, 35.0)
+                stop()
+                return true
+            }
+        },PulseType.STANDARD)
+    }
+
+    fun jumpSteppingStone(player: Player, `object`: Scenery) {
+        if (!hasLevelStat(player,Skills.AGILITY, 48)) {
+            sendMessage(player, "You must have an agility level of atleast 48 to perform this action.")
+            return
+        }
+        if (!inEquipment(player, Items.MONKEY_GREEGREE_4024)) {
+            sendMessage(player, "You need to transform into a ninja monkey to use the ape atoll courses.")
+            return
+        }
+        player.lock(3)
+        val toTile = Location(
+            `object`.location.getX(), `object`.location.getY(),
+            `object`.location.getZ()
+        )
+        val toTile2 = Location(if (player.location.getX() == 2755) 2753 else 2755, 2742, `object`.location.getZ())
+        val waterTile = Location(2756, 2746, `object`.location.getZ())
+        val Land = Location(2757, 2746, `object`.location.getZ())
+        player.pulseManager.run(object : Pulse() {
+            override fun pulse() : Boolean {
+                sendMessage(player, "You jump to the stepping stone...")
+                player.appearance.setAnimations(Animation(1381))
+                ForceMovement.run(player, toTile)
+                player.pulseManager.run(object : Pulse() {
+                    override fun pulse() : Boolean {
+                        if (RandomFunction.random(5) == 0) {
+                            player.appearance.setAnimations(Animation(1381))
+                            sendMessage(player, "..And accidently fall to the water.")
+                            player.impactHandler.manualHit(player, 2, ImpactHandler.HitsplatType.NORMAL)
+                            player.walkingQueue.addPath(waterTile.getX(), waterTile.getY(), false)
+                            player.appearance.setAnimations(Animation(741))
+                            player.pulseManager.run(object : Pulse() {
+                                override fun pulse() : Boolean {
+                                    player.appearance.setAnimations(Animation(-1))
+                                    ForceMovement.run(player,Land)
+                                    stop()
+                                    return true
+                                }
+                            },PulseType.STANDARD)
+                        } else {
+                            player.appearance.setAnimations(Animation(1381))
+                            ForceMovement.run(player,toTile2)
+                            rewardXP(player, Skills.AGILITY, 15.0)
+                            sendMessage(player, "..And made it carefully to the other side.")
+                            stop()
+                        }
+                        return true
+                    }
+                },PulseType.STANDARD)
+                stop()
+                return true
+            }
+        }, PulseType.STANDARD)
+    }
+
+    fun swingRope(player: Player, `object`: Scenery) {
+        if (!hasLevelStat(player,Skills.AGILITY, 48)) {
+            sendMessage(player, "You must have an agility level of atleast 48 to perform this action.")
+            return
+        }
+        if (!inEquipment(player, Items.MONKEY_GREEGREE_4024)) {
+            sendMessage(player, "You need to transform into a ninja monkey to use the ape atoll courses.")
+            return
+        }
+        if (player.location.getX() == 2756) return
+        if (!player.location.withinDistance(`object` as Location, 2)) return
+        player.lock(4)
+        player.appearance.setAnimations(Animation(1388))
+        //World.sendObjectAnimation(player, `object`, Animation(497))
+        val toTile = Location(2756, 2731, `object`.getZ())
+        player.walkingQueue.addPoint(toTile.getX(), toTile.getY(),  false)
+        rewardXP(player, Skills.AGILITY, 22.0)
+        sendMessage(player, "You skillfully swing across.",)
+        player.pulseManager.run(object : Pulse() {
+            override fun pulse() : Boolean {
+                ForceMovement.run(player, toTile)
+                stop()
+                return true
+            }
+        },PulseType.STANDARD)
+    }
+}

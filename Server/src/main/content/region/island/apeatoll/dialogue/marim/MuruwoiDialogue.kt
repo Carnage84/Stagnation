@@ -1,0 +1,37 @@
+package content.region.island.apeatoll.dialogue.marim
+
+import config.NPCs
+import core.game.dialogue.DialoguePlugin
+import core.game.dialogue.FacialExpression
+import core.game.node.entity.npc.NPC
+import core.game.node.entity.player.Player
+import core.plugin.Initializable
+
+/**
+ * Represents the Muruwoi dialogue plugin.
+ */
+@Initializable
+class MuruwoiDialogue(player: Player? = null) : DialoguePlugin(player){
+
+    override fun open(vararg args: Any?): Boolean {
+        npc = args[0] as NPC
+        npc(FacialExpression.OLD_ANGRY1,"Grr ... Get out of my way...")
+        stage = 99
+        return true
+    }
+
+    override fun handle(interfaceId: Int, buttonId: Int): Boolean {
+        when(stage){
+            99 -> end()
+        }
+        return true
+    }
+
+    override fun newInstance(player: Player?): DialoguePlugin {
+        return MuruwoiDialogue(player)
+    }
+
+    override fun getIds(): IntArray {
+        return intArrayOf(NPCs.MURUWOI_1450)
+    }
+}

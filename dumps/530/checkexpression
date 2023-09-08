@@ -1,0 +1,109 @@
+package content.region.misthalin.varrock.dialogue
+
+import config.NPCs
+import core.api.sendDialogue
+import core.game.dialogue.DialoguePlugin
+import core.game.dialogue.FacialExpression
+import core.game.node.entity.player.Player
+import core.plugin.Initializable
+import core.tools.END_DIALOGUE
+
+@Initializable
+class CheckExpression(player: Player? = null) : DialoguePlugin(player) {
+
+    override fun newInstance(player: Player): DialoguePlugin {
+        return CheckExpression(player)
+    }
+    override fun getIds(): IntArray {
+        return intArrayOf(NPCs.POX_2943)
+    }
+
+    override fun handle(interfaceId: Int, buttonId: Int): Boolean {
+        when (stage) {
+            0 ->  options("old_id","child_id","normal_id").also { stage++ }
+            1 -> when(buttonId){
+                1 -> sendDialogue(player, "old_id").also {stage = 2 }
+                2 -> sendDialogue(player, "child_id").also {stage = 70 }
+                3 -> sendDialogue(player, "normal_id").also {stage = 32 }
+            }
+            2  -> npcl(FacialExpression.OLD_HAPPY, "OLD_HAPPY").also { stage++ }
+            3  -> npcl(FacialExpression.OLD_CALM_TALK1, "OLD_CALM_TALK1").also { stage++ }
+            4  -> npcl(FacialExpression.OLD_CALM_TALK2, "OLD_CALM_TALK2").also { stage++ }
+            5  -> npcl(FacialExpression.OLD_DEFAULT, "OLD_DEFAULT").also { stage++ }
+            6  -> npcl(FacialExpression.OLD_EVIL1, "OLD_EVIL1").also { stage++ }
+            7  -> npcl(FacialExpression.OLD_EVIL2, "OLD_EVIL2").also { stage++ }
+            8  -> npcl(FacialExpression.OLD_NORMAL, "OLD_NORMAL").also { stage++ }
+            9  -> npcl(FacialExpression.OLD_SNEAKY, "OLD_SNEAKY").also { stage++ }
+            10 -> npcl(FacialExpression.OLD_DISTRESSED, "OLD_DISTRESSED").also { stage++ }
+            11 -> npcl(FacialExpression.OLD_DISTRESSED2, "OLD_DISTRESSED2").also { stage++ }
+            12 -> npcl(FacialExpression.OLD_ALMOST_CRYING, "OLD_ALMOST_CRYING").also { stage++ }
+            13 -> npcl(FacialExpression.OLD_BOWS_HEAD_SAD, "OLD_BOWS_HEAD_SAD").also { stage++ }
+            14 -> npcl(FacialExpression.OLD_DRUNK_LEFT, "OLD_DRUNK_LEFT").also { stage++ }
+            15 -> npcl(FacialExpression.OLD_DRUNK_RIGHT, "OLD_DRUNK_RIGHT").also { stage++ }
+            16 -> npcl(FacialExpression.OLD_NOT_INTERESTED, "OLD_NOT_INTERESTED").also { stage++ }
+            17 -> npcl(FacialExpression.OLD_SLEEPY, "OLD_SLEEPY").also { stage++ }
+            18 -> npcl(FacialExpression.OLD_PLAIN_EVIL, "OLD_PLAIN_EVIL").also { stage++ }
+            19 -> npcl(FacialExpression.OLD_LAUGH1, "OLD_LAUGH1").also { stage++ }
+            20 -> npcl(FacialExpression.OLD_LAUGH2, "OLD_LAUGH2").also { stage++ }
+            21 -> npcl(FacialExpression.OLD_LAUGH3, "OLD_LAUGH3").also { stage++ }
+            22 -> npcl(FacialExpression.OLD_LAUGH4, "OLD_LAUGH4").also { stage++ }
+            23 -> npcl(FacialExpression.OLD_EVIL_LAUGH, "OLD_EVIL_LAUGH").also { stage++ }
+            24 -> npcl(FacialExpression.OLD_SAD, "OLD_SAD").also { stage++ }
+            25 -> npcl(FacialExpression.OLD_MORE_SAD, "OLD_MORE_SAD").also { stage++ }
+            26 -> npcl(FacialExpression.OLD_ON_ONE_HAND, "OLD_ON_ONE_HAND").also { stage++ }
+            27 -> npcl(FacialExpression.OLD_NEARLY_CRYING, "OLD_NEARLY_CRYING").also { stage++ }
+            28 -> npcl(FacialExpression.OLD_ANGRY1, "OLD_ANGRY1").also { stage++ }
+            29 -> npcl(FacialExpression.OLD_ANGRY2, "OLD_ANGRY2").also { stage++ }
+            30 -> npcl(FacialExpression.OLD_ANGRY3, "OLD_ANGRY3").also { stage++ }
+            31 -> npcl(FacialExpression.OLD_ANGRY4, "OLD_ANGRY4").also { stage++ }
+            32 -> npcl(FacialExpression.NOD_YES, "NOD_YES").also { stage++ }
+            33 -> npcl(FacialExpression.WORRIED, "WORRIED").also { stage++ }
+            34 -> npcl(FacialExpression.HALF_WORRIED, "HALF_WORRIED").also { stage++ }
+            35 -> npcl(FacialExpression.AMAZED, "AMAZED").also { stage++ }
+            36 -> npcl(FacialExpression.EXTREMELY_SHOCKED, "EXTREMELY_SHOCKED").also { stage++ }
+            37 -> npcl(FacialExpression.GUILTY, "GUILTY").also { stage++ }
+            38 -> npcl(FacialExpression.HALF_GUILTY, "HALF_GUILTY").also { stage++ }
+            39 -> npcl(FacialExpression.SAD, "SAD").also { stage++ }
+            40 -> npcl(FacialExpression.CRYING, "CRYING").also { stage++ }
+            41 -> npcl(FacialExpression.HALF_CRYING, "HALF_CRYING").also { stage++ }
+            42 -> npcl(FacialExpression.AFRAID, "AFRAID").also { stage++ }
+            43 -> npcl(FacialExpression.SCARED, "SCARED").also { stage++ }
+            44 -> npcl(FacialExpression.PANICKED, "PANICKED").also { stage++ }
+            45 -> npcl(FacialExpression.ANNOYED, "ANNOYED").also { stage++ }
+            46 -> npcl(FacialExpression.ANGRY, "ANGRY").also { stage++ }
+            47 -> npcl(FacialExpression.FURIOUS, "FURIOUS").also { stage++ }
+            48 -> npcl(FacialExpression.ANGRY_WITH_SMILE, "ANGRY_WITH_SMILE").also { stage++ }
+            49 -> npcl(FacialExpression.ANGRY_WITH_SMILE_AND_EVIL_EYE, "ANGRY_WITH_SMILE_AND_EVIL_EYE").also { stage++ }
+            50 -> npcl(FacialExpression.SLEEPING, "SLEEPING").also { stage++ }
+            51 -> npcl(FacialExpression.SILENT, "SILENT").also { stage++ }
+            52 -> npcl(FacialExpression.NEUTRAL, "NEUTRAL").also { stage++ }
+            53 -> npcl(FacialExpression.THINKING, "THINKING").also { stage++ }
+            54 -> npcl(FacialExpression.HALF_THINKING, "HALF_THINKING").also { stage++ }
+            55 -> npcl(FacialExpression.DISGUSTED, "DISGUSTED").also { stage++ }
+            56 -> npcl(FacialExpression.DISGUSTED_HEAD_SHAKE, "DISGUSTED_HEAD_SHAKE").also { stage++ }
+            57 -> npcl(FacialExpression.ASKING, "ASKING").also { stage++ }
+            58 -> npcl(FacialExpression.HALF_ASKING, "HALF_ASKING").also { stage++ }
+            59 -> npcl(FacialExpression.ROLLING_EYES, "ROLLING_EYES").also { stage++ }
+            60 -> npcl(FacialExpression.HALF_ROLLING_EYES, "HALF_ROLLING_EYES").also { stage++ }
+            61 -> npcl(FacialExpression.DRUNK, "DRUNK").also { stage++ }
+            62 -> npcl(FacialExpression.SUSPICIOUS, "SUSPICIOUS").also { stage++ }
+            63 -> npcl(FacialExpression.LAUGH, "LAUGH").also { stage++ }
+            64 -> npcl(FacialExpression.LOUDLY_LAUGHING, "LOUDLY_LAUGHING").also { stage++ }
+            65 -> npcl(FacialExpression.EVIL_LAUGH, "EVIL_LAUGH").also { stage++ }
+            66 -> npcl(FacialExpression.FRIENDLY, "FRIENDLY").also { stage++ }
+            67 -> npcl(FacialExpression.HAPPY, "HAPPY").also { stage++ }
+            68 -> npcl(FacialExpression.JOLLY, "JOLLY").also { stage++ }
+            69 -> npcl(FacialExpression.STRUGGLE, "STRUGGLE").also { stage++ }
+            70 -> npcl(FacialExpression.CHILD_EVIL_LAUGH, "CHILD_EVIL_LAUGH").also { stage++ }
+            71 -> npcl(FacialExpression.CHILD_FRIENDLY, "CHILD_FRIENDLY").also { stage++ }
+            72 -> npcl(FacialExpression.CHILD_NORMAL, "CHILD_NORMAL").also { stage++ }
+            73 -> npcl(FacialExpression.CHILD_NEUTRAL, "CHILD_NEUTRAL").also { stage++ }
+            74 -> npcl(FacialExpression.CHILD_LOUDLY_LAUGHING, "CHILD_LOUDLY_LAUGHING").also { stage++ }
+            75 -> npcl(FacialExpression.CHILD_THINKING, "CHILD_THINKING").also { stage++ }
+            76 -> npcl(FacialExpression.CHILD_SAD, "CHILD_SAD").also { stage++ }
+            77 -> npcl(FacialExpression.CHILD_GUILTY, "CHILD_GUILTY").also { stage++ }
+            78 -> npcl(FacialExpression.CHILD_SUSPICIOUS, "CHILD_SUSPICIOUS").also { stage = END_DIALOGUE }
+        }
+        return true
+    }
+}

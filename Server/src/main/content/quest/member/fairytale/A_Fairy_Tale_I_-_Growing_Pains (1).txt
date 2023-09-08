@@ -1,0 +1,339 @@
+A Fairy Tale I - Growing Pain (Jan 16, 2009) https://www.youtube.com/watch?v=hEWHEWdSgLY
+
+Start the quest by talking to Martin the Master Gardener in Draynor Village. 
+
+What would you like to ask about?
+	"Skillcape of Farming."
+	"Quest."
+		Martin the Master Gardener: "Hello, <playername>, you look familiar. Didn't I catch you going through my pockets not that long ago?"
+		Player: "Me? No. I'm afraid you must have me confused with somebody else!"
+		Martin the Master Gardener: "I could have sworn ..."
+		Martin the Master Gardener: "Oh well, never mind. I have bigger problems to worry about right now."
+		
+		Select an Option
+			"Anything I can help with?"
+				Player: "Anything I can help with?"
+				Martin the Master Gardener: "I certainly could do with some help."
+				Player: "So tell me about your problems."
+				Martin the Master Gardener: "It all seemed to start about a month ago. I grow roses, you know?
+				Player: "Um, you seem to be getting side-tracked already."
+				Martin the Master Gardener: "What? Oh sorry."
+				Martin the Master Gardener: "As I was saying about a month ago I noticed the yield of my prize rose bushes had dropped slightly. I immediately suspected Crown Fall, a disease that can be fatal to a Mister Lincoln."
+				Player: "You're not making much sense. Who's Mister Lincoln?"
+				Martin the Master Gardener: "Sorry, Mister Lincoln's are the variety of roses that I specialize in. None of the plants showed any other symptoms of disease though. Then I noticed a reduced yield occurring in most of my other crops too."
+				Martin the Master Gardener: "I spoke to other gardeners that I know, and they all noticed similar problems."
+				Martin the Master Gardener: "Vegetable patches are growing fewer vegetables, bushes are producing fewer berries and everything that is planted seem to be more prone to disease!"
+				Martin the Master Gardener: "You've done some farming, haven't you noticed a decrease in the amount of produce you are getting lately?"
+				
+				Select an Option
+					"Now that I think about it, you're right!"
+						Player: "Now that I think about it, you're right!"
+						Martin the Master Gardener: "I know I am. Depressing isn't it?"
+						Player: "So what do you want me to do?"
+						Martin the Master Gardener: "I'd like you to find out what is causing this terrible problem and try and rectify whatever the problem is."
+						Player: "Do you have any ideas where I should start?"
+						Martin the Master Gardener: "If I were you, I'd start by speaking to some of the other gardeners."
+						<end of dialogue, quest progresses>
+					"No, can't say that I have."
+					 
+			"Oh dear. I hope you can sort them out by yourself."
+			"What is the banner for?"
+			
+
+Talk to Elstan the Gardener
+
+Select an Option
+
+"Are you a member of the Group of Advanced Gardeners?"
+	Player: "Are you a member of the Group of Advanced Gardeners?"
+	Elstan: "Why yes I am. Why do you ask?"
+	Player: "Martin has asked me to investigate why all the crops are failing."
+	Elstan: "Ah, Martin sent you, why didn't you say so? I personally think that our problems are all down to the fact that we haven't had enough rain of late. It's plain to see - just look at the levels of the rivers."
+	Elstan: "We need more raid. I don't suppose you can do anything about that?"
+	Player: "No, I'm afraid not."
+	Elstan: "Well there you go then. Until you find out how to make it raid you're going to have a hard time solving our problems."
+	<end of dialogue, quest progresses>
+"Would you look after my crops for me?"
+"Can you give me any Farming advice?
+"Can you sell me something?"
+"That's all, thanks."
+
+Talk to Kragen the gardener.
+
+Select an Option
+
+"Are you a member of the Group of Advanced Gardeners?"
+	Player: "Are you a member of the Group of Advanced Gardeners?"
+	Kragen: "Why yes I am. Why do you ask?"
+	Player: "Martin has asked me to investigate why all the crops are failing."
+	Kragen: "Insects! That's what you can tell him! Insects! Stop the insects from eating so many of our crops and we'd get maximum yield, I tell you!"
+	<end of dialogue, quest progresses>
+"Would you look after my crops for me?"
+"Can you give me any Farming advice?
+"Can you sell me something?"
+"That's all, thanks."
+
+Talk to Dantaera the gardener.
+
+Select an Option
+
+"Are you a member of the Group of Advanced Gardeners?"
+	Player: "Are you a member of the Group of Advanced Gardeners?"
+	Dantaera: "Why yes I am. Why do you ask?"
+	Player: "Martin has asked me to investigate why all the crops are failing."
+	Dantaera: "How can you ask such a thing? It's obvious! It's all you adventurers. Every time I get a crop planted, some adventurer comes along and digs it up and plants crops of their own, as if they owned my farming patch!"
+	Dantaera: "It's really annoying! You should speak to your friends about their rude behavior!"
+	Player: "But...but...they're not my friends! I've never even spoken to most of them!"
+	Dantaera: "Don't give me that! You're an adventurer, they're all adventurers. I bet you have some sort of secret guild and you gether there and say things like 'let's annoy the gardeners this week', don't you?"
+	Player: "No, I mean yes. There is a heroes guild, but ...!"
+	Dantaera: "Aha, so you admit it then! You should be ashamed of yourselves!"
+	Player: "Oh, I give up!"
+	<end of dialogue, quest progresses>
+"Would you look after my crops for me?"
+"Can you give me any Farming advice?
+"Can you sell me something?"
+"That's all, thanks."
+
+Talk to Lyra the gardener.
+
+Select an Option
+
+"Are you a member of the Group of Advanced Gardeners?"
+	Player: "Are you a member of the Group of Advanced Gardeners?"
+	Dantaera: "Why yes I am. Why do you ask?"
+	Player: "Martin has asked me to investigate why all the crops are failing."
+	Lyra: "Well obviously it's the seasons. They all seem to be out-of-wack these days. Summer comes earlier and earlier each year, but then it simply rushes by!"
+	Lyra: "If you find out what is upsetting the seasons you'll find out what is causing the harvest to fail."
+	Player: "I don't suppose you have any ideas about what could cause the seasons to be mixed up?"
+	Lyra: "No, sorry, but find that out and you'll get to the root of our problems." (Hah. Gardening puns.)
+	<end of dialogue, quest progresses>
+"Would you look after my crops for me?"
+"Can you give me any Farming advice?
+"Can you sell me something?"
+"That's all, thanks."
+
+Talk to Selena the gardener
+
+Select an Option
+
+"Are you a member of the Group of Advanced Gardeners?"
+	Player: "Are you a member of the Group of Advanced Gardeners?"
+	Selena: "Why yes I am. Why do you ask?"
+	Player: "Martin has asked me to investigate why all the crops are failing."
+	Selena: "Well I can tell by the look on your face that I'm not the first person you've asked. Why don't you tell me what you've heard from other members of the group so far?"
+	Player: "Why not? They all seem to be a bunch of loonies anyway."
+	Player: "I've been told it's the lack of rain, plagues of insects and recently I was told that the entire order of seasons is confused!"
+	Player: "I have no idea what to do about any of it. I am an adventurer, not a weather controller!"
+	Selena: "Did you ever consider that those theories might be correct?"
+	Player: "But they're all different, how could they all be correct?"
+	Selena: "I'll let you into a little secret that'll explain it all to you. In a word - fairies!"
+	Player: "Oh no! Not another crack-pot theory!"
+	Selena: "I'm serious!"
+	Selena: "Think it through. There are fairies who control everything natural from the weather to the seasons."
+	Selena: "Surely if all those things have been mentioned as catalysts to our problems it stands to reason that the fairies are actually the cause?"
+	Player: "Right, well thanks for your input. I'll think over what you said."
+	<end of dialogue, quest progresses>
+"Would you look after my crops for me?"
+"Can you give me any Farming advice?
+"Can you sell me something?"
+"That's all, thanks."
+
+Talk to Martin da bawss gardener.
+
+What would you like to ask about?
+	"Skillcape of Farming."
+	"Quest."
+		Martin the Master Gardener: "Hello again, <playername>. How are you getting on with solving the Gardening Group's problems?"
+		Player: "To be honest I'm worried about the sort of person you let join your organisation."
+		Martin the Master Gardener: "Why is that?"
+		Player: "I've heard theories ranging from climate change to fairies from your members."
+		Martin the Master Gardener: "Hmm, that's an interesting idea. Now that I think about it that does make sense. Yes, maybe you should talk to a fairy about it."
+		Player: "O-kay! You're the boss, any idea which flower I should look under to find a fairy?"
+		Martin the Master Gardener: "No, sorry, but I did hear there were some adventurers with a similar problem in the swamps near Lumbridge. Just don't mention my name if you talk to them, they're trying to keep it a secret, but everybody"
+		Martin the Master Gardener: "actually knows what they're up to."
+		Player: "Yes, I've spoken to them before."
+		<end of dialogue, quest progresses>
+
+
+To to le lost city, and talk to the fairy godfather.
+
+Player: "Who are you? Where's the Fairy Queen? What's going on here? Where's the Fairy Queen's throne gone?"
+Fairy Godfather: "Ciao esploratore! So many questions. Whicha one would you hava me answer first?"
+
+Select an Option
+	"Who are you?"
+		Player: "Who are you?"
+		Fairy Godfather: "Me? I am-a da Fairy Godfather."
+		Player: "...?"
+		Fairy Godfather: "I see-a by your face dat you have-a not-a heard of-a me. Irrispettoso, eet iz of no eemportance. You weesh-a to know sometheeng else or no?"
+	"Where's the Fairy Queen?"
+		Player: "Where's the Fairy Queen?"
+		Fairy Godfather: "Ah, eet iz a trageec-a tale. Da Queen Bee she iz-a how-you-say, seek?"
+		Player: "You mean sick. What happened?"
+		Fairy Godfather: "Ah, a tragedy to be-a struck-a down so young."
+		Fairy Godfather: "How-a much do ya know about-a da fairy folk, my beeg friend?
+		Player: "Not actually a whole deal, I'm afraid." (Shouldn't "a whole deal" be "a great deal"?)
+		Fairy Godfather: "Well, let-a me enlighten yous. Zanaris iz-a a nexus of-a da worlds. Da Queen Bee, she iz-a da guardian of-a all da folk dat live-z in Zanaris."
+		Fairy Godfather: "So when-a thees Tanglefoot arrives, da Queen Bee she-a goes to da Cosmic Temple area to kill-a eet, but someting goes-a wrong. Da Queen Bee, she gets-a hurt and is-a now inna da magic sleep."
+		Fairy Godfather: "She is-a being cared for by-a Fairy Nuff, who lives-a just north of-a da bank."
+		Player: "Thanks, I'll go see her then. Goodbye"
+		Fairy Godfather: "Ciao. Oh, and <playername>..."
+		Player. "Yes?"
+		Fairy Godfather: "A word-a of advice. You be-a careful not to cause da trrouble for da folk while you are in Zanaris. Ciao."
+		
+	"What's going on here?"
+		Player: "What's going on here?"
+			Fairy Godfather: "Hmm, an eeteresting question, my friend. I am'a trying to run'a da fairy kingdom, and youz iz-a being da irritating adventurer."
+			Player: "That's not what I mean!"
+			Fairy Godfather: "No, but-a dat iz da question I answered. Now iz-a dere anything else?"
+			
+	"Where's the Fairy Queen's throne gone?"
+		Player: "Where's the Fairy Queen's throne gone?"
+		Fairy Godfather: "An eenteresting place to start... I am-a here, ze Queen Bee iz not. So my chair - eet iz-a here, her throne - eet iz-a not. Eez there anytheeng else? I ama bizy fairy."
+	
+If you try to talk to him again
+Slim Louie: "Da Boss is a busy fairy! He don' have time to talk to yous humans. Vamoose!"
+<Chat message> "The Godfather is no longer paying attention to you."
+
+Talk to Fairy Nuff
+
+Fairy Nuff: "Sorry, I'm very busy and can't chat. If you want to know something go and talk to the Godfather."
+Player: "I did, he said I should come and talk to you!"
+Fairy Nuff: "Oh!"
+Fairy Nuff: "Sorry, I didn't realise."
+Fairy Nuff: "What can I help you with then?"
+Player: "Actually it's more a case of what can I help you with? I told the Fairy Godfather that I would help you find a cure for the Queen."
+Fairy Nuff: "Oh, thank you! I really need the help, I have no idea what ails the Queen. You must be a mighty healer!"
+Player: "Err...no, not me."
+Fairy Nuff: "A great druid then?"
+Player: "Um...'fraid not."
+Fairy Nuff: "A shaman?"
+Player: "No."
+Fairy Nuff: "A surgeon?"
+Player: "No."
+Fairy Nuff: "A doctor, medic, nurse?"
+Player: "No, no and no."
+Fairy Nuff: "So what are you then?"
+Player: "I'm a mighty adventurer!"
+Fairy Nuff: "A what!?"
+Player: "A mighty adventurer!"
+Fairy Nuff: "Yes, I heard. It's just not what I was expecting to hear."
+Fairy Nuff: "But hang on, you might be just the sort of person I need to help me!"
+Player: "How is that then?"
+Fairy Nuff: "I'm sure the Godfather told you that the Queen is in an enchanted sleep?"
+Player: "Well sort of, I couldn't really understand everything he was talking about."
+Fairy Nuff: "Shhh, somebody might hear. Look you're a visitor, so I'll tell you this much; it doesn't pay to talk about the Godfather behind his back."
+Fairy Nuff: "But back to the problem at hand - the Fairy Queen. She was brought here after her battle with the Tanglefoot in a terrible state, extremely weak and barely able to fly!"
+Fairy Nuff: "Here, I've written down a list of her symptoms."
+Fairy Nuff: "When the Queen got back here, she was clearly weakening fast. It appears as if the magic force that is her life essence is slowly unravelling."
+Fairy Nuff: "I have put her in a state of tempus fugit, that will slow time down for her, and thus prolong the amount of time that she remains alive."
+Fairy Nuff: "Now, what I need you to do is find a mage by the name of Zandar Horfyre. He has spent many years studying magical illness. Take the list to him and ask him if he knows what ails the Queen, please."
+Player: "That doesn't sound too difficult, where will I find him."
+Fairy Nuff: "I believe he now resides in the Dark Wizard's tower near Falador, and <playername>, please hurry. I fear the Queen doesn't have much time left!"
+<end of dialogue, quest progresses, list of symptoms obtained>
+
+"List of Fairy Queen's Symptoms
+Extremely weak
+Slow discorporation of ethereal body
+Drifting in and out of coma
+Shallow breath
+Fading magical energy
+High fever"
+
+Talk to Zandar Horfyre in the dark wizard tower.
+
+Player: "Hello, I need your help."
+Zandar Horfyre: "And why should I help you, fool? You attack my brethren and I, and then you demand my help! I think not!"
+Player: "But Fairy Buff said you would help me!"
+Zandar Horfyre: "Fairy Nuff sent you!"
+Zandar Horfyre: "How is she? I owe her a great deal, she saved me from a mortal injury I sustained when I was investigating the nature of Otherworldly beings. So, how can I help?"
+Player: "The Fairy Queen is extremely ill. She was in a battle with a Tanglefoot and her injuries resulted in her being in a coma."
+Zandar Horfyre: "This is grave news indeed!"
+Zandar Horfyre: "You think the Tanglefoot is responsible? I don't see how that could be. A Tanglefoot will normally kill its victim outright...unless..hmmm...I wonder..."
+Zandar Horfyre: "I don't suppose you could give me more details about the Fairy Queen's condition, could you?"
+Player: "Fairy Nuff gave me a list of her symptoms. Here, have a look at it."
+Zandar Horfyre: "Hmm...yes...slow discorporation of the ethereal body, eh? Hmm...I think I know what the problem might be."
+Player: "You do? That's great! What is it?"
+Zandar Horfyre: "From what I know about fairies, their basic lifeforce is pure magic. Much as we humans would refer to our souls as our life essence, so too does a fairy have a life essence of pure magic."
+Zandar Horfyre: "You could actually refer to fairies as magic embodied and not be wrong."
+Player: "Yes, but about the Fairy Queen?"
+Zandar Horfyre: "Patience, I am getting to that. It appears the Fairy Queen has lost a large part, indeed the majority, of her life essence. Either it was drained from her by the Tanglefoot or she did it voluntarily."
+Zandar Horfyre: "Although why she would do that is beyond me."
+Player: "So I guess I need to go and kill this Tanglefoot and get back her magic essence if I am to help her?"
+Zandar Horfyre: "Yes, but if I were you I would seek out a necromancer by the name of Malignus Mortifer. I believe he once fought a Tanglefoot, many years ago."
+Zandar Horfyre: "You should probably ask him for advice on how to combat it."
+Player: "Malignus Mortifer. Any idea where I can find him?"
+Zandar Horfyre: "He's rumoured to have been seen near Port Sarim with his followers recently. Rumour has it that he's working on a spell that has something to do with fungus!"
+Player: "Okay, thanks very much."
+Zandar Horfyre: "Don't mention it, and give my regards to Nuff, when you see her next."
+<end of dialogue, quest progresses>
+
+Talk to Malignus Mortifer
+
+What would you like to say?
+
+	"Who are you and what are you doing here?"
+	"I need help with fighting a Tanglefoot."
+		Player: "I need help with fighting a Tanglefoot. Can you help me?"
+		Malignus Mortifer: "Almost certainly, I am a great practitioner of the magic arts, after all."
+		Player: "Great, thanks. I was told by Zandar Horfyre that you fought one once."
+		Malignus Mortifer: "That is true and an epic battle it was too."
+		Player: "That's great! I presume you won as you are here to tell me about it, could you tell me how to defeat one, please?"
+		Malignus Mortifer: "Of course I won! As I've already stated I am a master of the magic arts."
+		Malignus Mortifer: "Why do you want to know how to kill a Tanglefoot?"
+		Player: "There is a Tanglefoot in the lost city of Zanaris and I have been asked to kill it."
+		Malignus Mortifer: "I see. Well I could tell you how to defeat your Tanglefoot, however I need you to perform a little undertaking for me first."
+		Player: "What exactly do you have in mind?"
+		Malignus Mortifer: "To the north-east of here is a haunted manor. Bring me a skull from a grave you find there and you shall have your answer."
+		Player: "I'll go and get it then."
+		Malignus Mortifer: "Find, I'll see you soon."
+		<end of dialogue, quest progresses>
+	"Where can I get clothes like those?"
+	
+	
+Go get a skull from Draynor Mansion, by digging up the grave on the north side of mansion.
+Talk to Malignus Mortifer.
+
+What would you like to say?
+
+	"Who are you and what are you doing here?"
+	"I was asking you about fighting a Tanglefoot..."
+		Player: "I was asking you about fighting a Tanglefoot..."
+		Malignus Mortifer: "So, have you brought me the skull?"
+		Player: "Yes, I have it right here."
+		Malignus Mortifer: "Right then, to business. A Tanglefoot can not be harmed by might nor magic. The only weapon that can damage their are a pair of enchanted secateurs!"
+		Player: "Where can I get these enchanted secateurs?"
+		Malignus Mortifer: "You will have to make them... listen carefully and I will tell you how."
+		Malignus Mortifer: "Obviously you will need a pair of secateurs, you will also need to gather some Jogre bones, a kingworm and a bit of Snape grass."
+		Malignus Mortifer: "Take them to the Nature Spirit and ask him to perform the ceremony of Phasma Phasmatis Natura."
+		Player: "Phasma Phasmatis Natura. Got it. Is that all?"
+		Malignus Mortifer: "Yes, that's all. You'll be able to use those secateurs to kill the monster."
+		Player: "Great, thanks very much."
+		<end of dialogue, quest progresses.>
+	"Where can I get clothes like those?"
+
+Get all the items mentioned, and go talk to the Nature Spirit.
+
+Nature Spirit: "Welcome back, my friend. I sensed that you require my help and so I have once more returned."
+Player: "Thank you! I need your help if enchanting a pair of secateurs."
+Nature Spirit: "Secateurs? That is a strange thing to enchant. Would you care to inform me of why you need them?"
+Player: "Sure. A Tanglefoot has invaded the fairy kingdom of Zanaris and the only way I can fight it is with a pair of enchanted secateurs, apparently."
+Nature Spirit: "Ah, a Tanglefoot! Your information is correct, secateurs that have been blessed by a Nature Spirit are the only weapons that can harm such a terrible creature."
+Nature Spirit: "I shall be glad to help you. Do you have all the required items for the ceremony?"
+Player: "Yes, I have everything right here."
+Nature Spirit: "Then let us begin..."
+Nature Spirit: "It is done!"
+Nature Spirit: "Farewell, <playername> and good luck with your coming battle."
+<end dialogue, quest progresses>
+
+Go find the tanglefoot, past the cosmic altar and gatekeeper.
+EX-TER-MIN-ATE.
+
+Talk to the Fairy Godfather again. (Yuck)
+
+Fairy Godfather: "Ciao <playername>. I am-a glad to see-a yous back! I was-a worried that the Tanglefoot would-a kill-a you too."
+Player: "You needn't have worried I managed to kill it!"
+Fairy Godfather: "Ben fatto, my friend! Da folk-a dey owe yous a great-a deal! So did-a yous getta back da Queen Bee's magic power?"
+Player: "I retrieved this pair of Enchanted secateurs, I think they must contain the Queen's missing magic."
+Fairy Godfather: "Grazie infinite! I will give-a dem to da healing fairy. Da Queen Bee, she will-a soon be strong again!"
+<Quest-a complete-a>

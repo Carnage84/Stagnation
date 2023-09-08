@@ -1,0 +1,40 @@
+package content.region.desert.nardah.dialogue
+
+import config.NPCs
+import core.game.dialogue.DialoguePlugin
+import core.game.dialogue.FacialExpression
+import core.game.node.entity.npc.NPC
+import core.game.node.entity.player.Player
+import core.plugin.Initializable
+
+/**
+ * Represents the Nkuku dialogue plugin.
+ */
+@Initializable
+class NkukuDialogue(player: Player? = null) : DialoguePlugin(player){
+
+    override fun open(vararg args: Any?): Boolean {
+        npc = args[0] as NPC
+        player(FacialExpression.FRIENDLY,"Good day to you.").also { stage = 0 }
+        return true
+    }
+
+    override fun handle(interfaceId: Int, buttonId: Int): Boolean {
+        when(stage){
+            0 -> {
+                npc(FacialExpression.FRIENDLY, "May Saradomin be with you.").also { stage = 99 }
+            }
+
+            99 -> end()
+        }
+        return true
+    }
+
+    override fun newInstance(player: Player?): DialoguePlugin {
+        return NkukuDialogue(player)
+    }
+
+    override fun getIds(): IntArray {
+        return intArrayOf(NPCs.NKUKU_3032)
+    }
+}

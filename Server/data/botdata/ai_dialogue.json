@@ -1,0 +1,30 @@
+{
+  "standard": [
+    "Hey!",
+    "Hello @name"
+  ],
+  "halloween": [
+    "Trick or treat!"
+  ],
+  "approaching_christmas": [
+    ""
+  ],
+  "christmas_eve": [
+    "Happy Christmas eve @name!"
+  ],
+  "christmas_day": [
+    "Merry Christmas @name!"
+  ],
+  "new_years_eve": [
+    "Happy New Years Eve @name"
+  ],
+  "new_years": [
+    "Happy New Years @name!"
+  ],
+  "valentines": [
+    "Happy Valentines day @name!"
+  ],
+  "easter": [
+    "Happy Easter day @name!"
+  ]
+}

@@ -1,0 +1,217 @@
+Summer's End (Feb 6, 2009) https://www.youtube.com/watch?v=4iNOBR_tj8Y
+
+Start quest by talking to Summer Bonde at the farm in the Wilderness.
+
+Player: Summer, what are you doing here? What happe-"
+Summer Bonde: <playername>, I don't have time right now! You must come with me right away!"
+Player: "Wait, what has happened? Why did the ground shake?"
+Summer Bonde: "Not here. Please, come with me!"
+
+Select an Option
+	"Okay, I'll come."
+		Player: "Okay, I will come come."
+		<cue cutscene>
+		Player: "What's this? What's going on here?"
+		Meranek Thanatos: "Thank you for coming, <playername>. We understand that it must be awkward for you to come back after what we said last time."
+		Player: "Come back? Is this the farm? What happened?"
+		Erik Bonde: "Oh, no, we're some place else now. It's hard to explane, but Jallek should be able to shed some light on the situation."
+		Jallek Lenkin: "Actually, I think we should explain it from the beginning."
+		Player: "Please do, this is all very confusing. As far as I've understood, I shouldn't even be here."
+		Erik Bonde: "Nobody should, <playername>, but fate has been rather cruel to us all."
+		Erik Bonde: "It all started around four hundred years ago, when we moved here from Varrock to set up a farm of our own. I'm sure Summer has already told you what happened then."
+		Player: "Yes, she told me that first her mother died and then the rest of you were murdered."
+		Erik Bonde: "Yes, my beloved Jennica died from spider poisoning about a year before the attack. What happened to her soul, we do not know. We can only hope she did not become a victim of the Beast's. Then the rest of us,"
+		Erik Bonde: "except for Gargon, were murdered."
+		Player: "Who is Gargon?"
+		Erik Bonde: "He worked alongside Meranek and Jallek, but was away on an errand at the time of the attack. I can only assume he is long since dead by now."
+		Player: "Oh, okay. Sorry for interrupting you, please go on."
+		Erik Bonde: "As we died, we did not get to move on as people normally do. Instead, we were trapped in this realm. Every day since then, the Beast has been slowly draining energy from our souls. The pain is constant"
+		Erik Bonde: "and horrible, but sad to say, we have almost become used to it now. But the first few weeks... we could do nothing but scream from agony."
+		Jallek Lenkin: "We don't exactly know what the Beast is, but it's been here a lot longer than we have. As Erik mentioned, it feeds directly on souls which fuelds the dark energies that keeps it...alive, I suppose. We suspect that before"
+		Jallek Lenkin: "we arrived, it outright devoured every soul it came across. The veil between our worlds was still strong then... but that has started to change."
+		Jallek Lenkin: "Not soon after our arrival, we could feel the veil separating the beast's realm from yours growing weaker and weaker. It's as if the Beast is trying to claw its way through."
+		Player: "But then there is even more reason to stop it! If it gets through, it will have all the people of rs to feed upon!"
+		Meranek Thanatos: "Yes, we also though of this...and it would no longer be in need of us..."
+		Jallek Lenkin: "Over the centuries, it seems to have made quite a bit of progress...but that is nothing compared to what has happened since Summer brought you over to try to help us."
+		Meranek Thanatos: "It has broken free, <playername>, and it's more powerful than ever."
+		Jallek Lenkin: "I assume you felt the ground shake?"
+		Player: "Yes, there was a short earthquake right before Summer appeared at the farm again. What happened?"
+		Jallek Lenkin: "It is breaking through the veil. With its new powers, it has started crashing through the realms. That actually explains where we are right now."
+		Player: "What do you mean?"
+		Jallek Lenkin: "This void... we're actually inside the veil that separates our two realms. It has grown so weak that even we can't enter it."
+		Player: "You're saying that we're in the Abyss? I don't even remember it being this... this bright."
+		Jallek Lenkin: "No, this is not the Abyss. The Beast is not so patient that is' trying to find an actual path to our world - it is creating its own. The Abyss is all around us, but the Beast is crashing its way straight through it, pushing"
+		Jallek Lenkin: "everything aside, leaving nothing but this void."
+		Erik Bonde: "As you probably understand, we must act now. It doesn't matter how powerful it is, we must stop it."
+		Erik Bonde: "And...as you've dealt with it before and...and because you are partly responsible for how quickly this is all evolving, we wer hoping that you would be willing to set things straight again."
+		Player: "You can't blame me for this! Just asking me to help would've been perfectly fine."
+		Erik Bonde: "I...I apologise."
+		Player: "So, what is it we must do? How can we defeat this thing?"
+		Meranek Thanatos: "As we mentioned last time we saw you, we have tried before, and failed. But we were hoping that, with your help, this time we might succeed."
+		Meranek Thanatos: "There is a cave just north of the farm - the first thing we need to do is lure it in there."
+		Meranek Thanatos: "Once inside, we can go along with our old plan on how to defeat it, but we will give you further instructions once we've got it where we want it."
+		Erik Bonde: "We were thinking that maybe you could lure it like you did before? By gaining its attention with newly summoned souls."
+		Jallek Lenkin: "However, you should know that if there's anything the Beast is familiar with, it's souls. I doubt it'll be possible to do it exactly the same way as last time. You need to find a new type of soul to lure it with. Not just a new"
+		Jallek Lenkin: "shape, but the spirit itself must be of a completely different type, and not one of the three you last used. Aside from being marked by a symbol, the discs north of the farm are also colour coded - this might give you"
+		Jallek Lenkin: "some useful information as to what kind of soul you must use. Once you have the beast in tow, enter the cave before it manages to claim the spirit."
+		Player: "Alright, I should be able to do that."
+		Erik Bonde: "Thank you, <playername>. May Saradomin be with you."
+		
+		Select an Option
+			"I'm sure he will be."
+				Player: "I'm sure he will be."
+				Meranek Thanatos: "Now get that cave open and lure the Beast inside."
+				Player: "Will do."
+				<end cutscene>
+				<end of dialogue, quest progresses>
+			"Oh no, I'm not putting my faith in him."
+	"No, I will just make things worse."
+	
+Travel to the cave and mine it
+<playerchat> "You mine away the support from the cave entrance and it collapses"
+<playerchat> "You fail to move out of the way in time and take some damage from the falling rocks."
+
+Operate Jennica's ring
+Summon something that needed a blue charm to craft
+Use it to lead the Beast inside the cave.
+
+<cue cutscene>
+Meranek Thanatos: "Well done, <playername>, I did not believe that you would be able to get the Beast here - maybe Summer's faith in you is justified."
+Player: "Maybe so, Meranek, but luring the Beast is one thing, harming it is quite another! Now that we have it trapped, what do you propose we do?"
+Meranek Thanatos: "Fear not, we have a plan. The roots around this chamber are cursed - they burn with a supernatural intensity. We believe that the Beast's vision will not be able to distinguish between the fires and a soul,"
+Meranek Thanatos: "drawing it towards them."
+Player: "So, your plan is to burn it? That's it? I'm sorry, Meranek, but that's preposterous. Fire won't damage a creature this powerful."
+Meranek Thanatos: "You are correct that the fire will not harm the Beast, but it will surprise it. We have studdied this creature for centuries and noticed a weakness in its chest - where the Beast stores the energy of the souls it"
+Meranek Thanatos: "devours. Once it is stunned I will strike and try to break through its protective armour."
+Player: "So, I need to gather the roots from around this chamber to build fires and lure the Beast, then you will attack?"
+Meranek Thanatos: "Exactly..."
+Player: "You take all the glory while I'm scuttling around gathering twigs?"
+Meranek Thanatos: "Yes. But you must be on your guard: the Beast can recognise when it's being threatened, and it won't take kindly to it. So keep your eyes, as well as ears, open and try to stay out of the way of its attacks."
+Meranek Thanatos: "I should also warn you that no amount of armour will protect you from the Beast's attacks. So, to allow you as much mobility as possible, I suggest you only bring the necessary equipment - armour and weapons"
+Meranek Thanatos: "will be useless for you here."
+Meranek Thanatos: "So, are you ready, <playername>?"
+
+Select an Option
+	"Yes, I am."
+		<end of dialogue, cutscene ends, quest progresses>
+	"Could you explain that again?"
+	"No, I'm not."
+		Player: "No, I'm not."
+		<end of dialogue, cutscene ends>
+
+
+Beat the Beast
+Go through passage to the east
+
+<cue cutscene>
+Jallek Lenkin: "Very well done, <playername>, we've managed to shatter the Beast's chest plate."
+Jallek Lenkin: "I'm guessing Meranek didn't explain exactly what its weakness is?"
+Player: "Well, kind of. He just mentioned that its weakness is in its chest, where it stores the energy from the souls it devours."
+Jallek Lenkin: "Yes, I thought as much."
+Jallek Lenkin: "Anyway, the Beast is no ordinary life form. Actually...it's not a life form at all. As mentioned before, it's a supernatural being that sustains itself by feeding on the souls of the living and the dead. The parts of a"
+Jallek Lenkin: "soul it devours do not die until the Beast has used up all the energy."
+Jallek Lenkin: "In other words, the souls are still alive within the Beast."
+Player: "Wait, so you're saying that parts of you, Summer, and everyone else are still alive in there?"
+Jallek Lenkin: "Yes, but the energy is severely corrupted. This creates something I cannot explain as anything but a separate creature within the Beast. This being is in fact the dark core of souls the beast draws power from -"
+Jallek Lenkin: "which is the energy Meranek mentioned. It has, until now, been shielded behind the Beast's chest plate, so we need to take advantage of this weakness before it has regenerated itself."
+Player: "How can we do that?"
+Jallek Lenkin: "In preparation for finally being able to fully destroy the Beast, I must weaken it. Over the centuries I have studied the creature, I have also managed to understand and use some of the dark powers that"
+Jallek Lenkin: "circulate here. I can cast something of a weakening spell at it, but it requires timing."
+Jallek Lenkin: "First of all, I must be able to get a clear shot at the Beast's head. Secondly, I can only do so while the dark core is not within the Beast's body, lest it soak up any harm I try to do to it, and it will just strike at the"
+Jallek Lenkin: "remains of our souls."
+Player: "I'm guessing that's where I come in?"
+Jallek Lenkin: "Correct. As the Beast has been drawing power from your soul, parts of you must also be in there. When the creature comes out of the Beast's chest, it will likely try to return to its true owner - namely you,"
+Jallek Lenkin: "<playername>."
+Player: "Okay, so I just need to get these fragments of my soul back. I guess I can do that."
+Jallek Lenkin: "No! You definitely must not! The energy has been corrupted by the Beast. It may still be drawn to you, but if you come in contact with it, you will gain nothing but pain."
+Jallek Lenkin: "So, you must stay out of its way, but at the same time make sure to lure it far away so that the Beast cannot get it back."
+Jallek Lenkin: "There are soft patches of soil in this cave. Use a spade to dig holes in the soil and then use yourself as bait to trick the dark core into the homes. When the Beast bends over to get it back, I will strike."
+Player: "Okay, so I dig holes in the ground and act as live bait for the dark core, tryint to get it to fall into one of them?"
+Jallek Lenkin: "Yes, while also keeping it away from the Beast. If the Beast happens to get it back, just wait for it to get loose again."
+Jallek Lenkin: "Did you understand all of that?"
+
+Select an Option
+	"Yes, I know what to do."
+		<end cutscene, quest progresses>
+	"No, can you explain it again?"
+	"Actually, I don't think I'm ready just yet."
+	
+Eh. Do what talky ghost says.
+
+Beat beasty
+Go through passage to the East.
+
+<cue cutscene>
+Erik Bonde: "Well done, <playername>. The Beast appears weak enough now - it is time we defeat it for good."
+Jallek Lenkin: "If the spells have had the effect we've hoped for, we should be able to do some more direct harm to the Beast's actual existence now."
+Jallek Lenkin: "It is a creature born from an overwhelming presence of pain and torment, so we must strike it down with holy power."
+Jallek Lenkin: "Unfortunately, holiness is something the Beast has long since drained from our souls, so we still need your help, <playername>."
+Meranek Thanatos: "Remember when you helped Summer strengthen her soul?"
+Player: "Yes, I remember. I brought back memories and experiences from her past."
+Jallek Lenkin: "Exactly. We need you to do something similar now."
+Erik Bonde: "This is the cave where Gargon buried us, many years ago - the same cave where we buried my beloved Jennica."
+Erik Bonde: "The graves are monuments built in our memory, and thus strong anchors to our souls."
+Jallek Lenkin: "We will temporarily return into our graves and you must bless them to temporarily strengthen our souls and give us the power to strike at the Beast."
+Jallek Lenkin: However, this land has been corrupted by its evil presence, so we can't stay in the ground for long. Additonally, the Beast will most likely be trying to drain us completely dry when it realizes what we're up to."
+Meranek Thanatos: "We must travel from grave to grave, and at the right moment, when the Beast is channeling its own powers, you must bless one of the graves we're currently in."
+Jallek Lenkin: "Depending on what part of its dark energy it's currently drawing power from, you must bless the right grave so that the correct one of us can cause a backlash of power."
+Erik Bonde: "Now that the Beast has been weakened, you should be able to tell the souls apart by colour as well as shape, so stay focused."
+Jallek Lenkin: "Also, keep in mind that we must all strike at the Beast once each! Our souls are different, and only then will the Beast be defeated. Remember that, <playername>."
+Meranek Thanatos: "Are you ready, <playername>?"
+
+Select an Option
+	"Yes, I am ready."
+		<end of dialogue, end cutscene, quest progresses>
+	"Can you explain that again?"
+	"No, I'm not ready yet."
+		Player: "No, I'm not ready yet."
+		<end of dialogue, end cutscene>
+
+Do stuffs said by talky ghosties.
+
+Win.
+
+Summer Bonde: "You did it, <playername>! You defeated the Beast!"
+Player: "Yeah, it appears I did."
+Summer Bonde: "Thank you so, so much! You have saved our souls! I'm feeling much stronger already."
+Player: "I'm just glad I could be of help."
+Summer Bonde: "You did more than just helping out. You're a hero, <playername>."
+Player: "Hah. I guess so."
+Summer Bonde: "You should speak to the elders, I'm sure they will want to thank you, as well."
+
+Leave cave.
+
+Erik Bonde: "Before we move on, we have a few things to give you to show our appreciation for everything you've done."
+Player: "Wait, you're leaving? Where are you going?"
+Jallek Lenkin: "Death, <playername>. With the Beast no longer keeping us trapped here, we can finally die."
+Player: "That doesn't really seem like a happy ending..." <sad face>
+Jallek Lenkin: "We have waited for this moment for hundreds of years. It's a relief that we can finally get our eternal rest."
+Summer Bonde: "Please don't be sad, <playername>. You'll always have mother's ring to remember us by."
+Summer Bonde: "Also, now that I am stronger, I can finally give it a proper blessing."
+"Summer closes her eyes and concentrates for a moment."
+Summer Bonde: "You should now be able to use the ring to go through all portals leading you into this realm. There are the strong ones, which you have been able to pass through before. Then there are the weak ones, which look similar"
+Summer Bonde: "but they just don't glow quite as strongly."
+Summer Bonde: "Wilderness. Portals tend to appear in locations with an already strong spiritual prescence, so I suggest starting to look thee. You must then operate your ring in the right spot to go through it. IF you're not standing in or" 
+Summer Bonde: "right next to a portal, the ring simply won't give out a response."
+Player: "So I just wear the ring on my finger and operate it when I think I'm next to a portal?"
+Summer Bonde: "Yes, that's correct. And, as I mentioned, they tend to appear in places where the presence of spirits is already strong - like here on the farm or in the village."
+Player: "Alright, I'll keep it in mind."
+Meranek Thanatos: "I also have something I want to give you, <playername> - I want you to have this shield."
+Meranek Thanatos: "I made it myself a long, long time ago, when I was still alive. It may not be much in its own right, but during our early struggles against the Beast, Jallek came up with a way of making it stronger."
+Meranek Thanatos: "He used a holy elixir and the power of Saradomin to bless the shield, making it more powerful, and then he created a series of magical sigils to attach to it. Each sigil strengthens the shield with different powers."
+Meranek Thanatos: "However, once one has been attached to the shield, it cannot be removed and no other sigils can be attached with it."
+Meranek Thanatos: "The shields became very powerful, but, unfortunately, I lost all parts in one of the Beast's violent outbreaks about a hundred years ago. If you happen to come across any holy elixir or sigils during your travels"
+Meranek Thanatos: "in the Wilderness, you could probably put them together yourself."
+Jallek Lenkin: "And even if you can't, you may be able to find someone skilled enough to do it for you."
+Player: "Let me see if I got this straight. This shield you're giving me now, I can bless it using holy elixir and the powers of Saradomin?"
+Meranek Thanatos: "That's correct."
+Player: "And once it has been blessed, I can attach a magical sigil to it?"
+Meranek Thanatos: "That is also correct. If you can't bless it yourself, you may be able to find a holy man of Saradomin to do it for you."
+Player: "Alright. Thank you very much for these gifts."
+Erik Bonde: "It is the least we can do, <playername>. Now it is time for us to leave. Farewell, and good luck on your adventures."
+Meranek Thanatos: "Goodbye, <playername>, and be sure to put that shield to use."
+Jallek Lenkin: "Goodbye and thank you for everything."
+Summer Bonde: "Please don't forget us, <playername>. Farewell..."
+<quest win. woooo>
+
+
